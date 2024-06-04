@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    color: #000080;
+
+}
+
+/* Header styling */
+header{
+    height: 80px;
+    background-color: aqua;
+    padding: 15px;
+    top: 0;
+
+}
+
+/* Styling for the header logo */
+.header-img{
+    position: relative;
+    right: 280px;
+    bottom: 5px;
+}
+
+.flex-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styling for header navigation links */
+header ul li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 0px 8px;
+    font-size: 20px;
+    color: #000080;
+}
+
+header ul li a:hover{
+    color: #1E90FF;
+}
+
+.reno-main{
+    height: 300px;
+    background-image: url("images/bccg\ reno.jpg");
+    text-align: center;
+    padding: 200px;
+    margin-bottom: 0px;
+    color: #000080;
+}
+
+.bcg-color{
+    background-color: bisque;
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.reno-main i{
+    font-size: 30px;
+}
+
+.reno-main h2{
+    font-size: 30px;
+}
+
+
+.reno-main p{
+    width: 70%;
+    margin: auto;
+    font-size: 25px;
+}
+
+.footer{
+    background-color: aqua;
+    height: 200px;
+    margin-top: -20px;
+}
+
+.direct{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.direct li a{
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.direct li a:hover{
+    color:#1E90FF;;
+}
+
+.footer p{
+    position: absolute;
+    left: 150px;
+}
+
+
+
+.handles{
+    position: absolute;
+    right: 200px;
+}
+
+.handles i{
+    color:#000080
+}
+
+.handles li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.handles  li a{
+    text-decoration: none;
+}
+
+.flex-handles{
+    display: flex;
+}
+
+

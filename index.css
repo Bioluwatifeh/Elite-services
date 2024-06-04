@@ -1,0 +1,449 @@
+body{
+    margin: 0;
+    color: #000080;
+
+}
+
+/* Header styling */
+header{
+    height: 80px;
+    background-color: aqua;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+/* Styling for the header logo */
+.header-img{
+    position: relative;
+    right: 280px;
+    bottom: 5px;
+}
+
+.flex-header{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Styling for header navigation links */
+header ul li{
+    list-style: none;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 0px 8px;
+    font-size: 20px;
+    color: #000080;
+}
+
+header ul li a:hover{
+    color: #1E90FF;
+}
+
+/* Main page styling */
+.main-page{
+    height: 550px;
+    background: url(images/bcg\ main\ page.jpg);
+
+}
+
+.main-page{
+    margin-top: 100px;
+    padding-top: 50px;
+}
+
+.main-page i{
+    font-size: 25px;
+}
+
+/* About section styling */
+.about{
+    width: 70%;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    padding: 80px;
+    padding-top: 20px;
+    height: 350px;
+    margin-top: 30px;
+}
+
+.about p{
+    font-size: 15px;
+}
+
+.flex-about{
+    display: flex;
+    margin-top: 50px;
+}
+
+/* Notice section styling */
+.notice{
+    background-color: bisque;
+    padding: 50px;
+    text-align: center;
+}
+
+.notice h1{
+    color: #000080;
+}
+
+.Elite-flex{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.Elite-service{
+    padding: 100px;
+    background-color: bisque;
+    width: 50%;
+}
+
+.Elite1-flex{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.Elite-service1{
+    padding: 100px;
+    background-color: aqua;
+    width: 50%;
+}
+
+.services i{
+    font-size: 30px;
+}
+
+#services a{
+    text-decoration: none;
+}
+
+#services a:hover{
+    color: #1E90FF;
+}
+
+
+/* Background images for different services */
+.clean{
+    background: url(images/house\ clean.jpg);
+}
+
+.renovate{
+    background: url(images/bccg\ reno.jpg);
+}
+
+.paint{
+    background: url(images/paint.jpg);
+}
+
+.decorate{
+    background: url(images/decoration.jpg);
+}
+
+
+.logistics{
+    text-align: center;
+    background: url(images/logistics.jpg);
+    height: 500px;
+}
+
+.log-info{
+    margin: auto;
+    width: 50%;
+    background-color: bisque;
+    padding: 50px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+
+.p-log{
+    width: 50%;
+    margin: auto;
+}
+
+.why-us{
+    text-align: center;
+    padding: 70px;
+}
+
+.why-us i{
+    font-size: 30px;
+}
+
+.flex-whyus{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.first{
+    margin-right: 10px;
+}
+
+/* Booking section layout and styling */
+.book-us{
+    display: flex;
+    justify-content: space-around;
+    background: url(images/bcg\ painter.jpg);
+}
+
+.reg{
+    background-color: aqua;
+    width: 30%;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+input[type="date"], input[type="time"] {
+    width: calc(50% - 10px);
+    display: inline-block;
+}
+input[type="date"] {
+    margin-right: 20px;
+}
+input[type="tel"], input[type="text"] {
+    width: calc(80% - 13.33px);
+    display: inline-block;
+}
+input[type="tel"] {
+    margin-right: 20px;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+textarea {
+    resize: vertical;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Toggle button styling */
+#toggle-button {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 400px;
+}
+
+#toggle-button:hover{
+    color:#1E90FF;
+}
+
+#working-hours {
+    margin-top: 10px;
+    background-color: #fff;
+    height: 200px;
+    list-style: none;
+    padding: 30px;
+}
+
+#working-hours li{
+    margin-bottom: 10px;
+}
+
+.footer{
+    background-color: aqua;
+    height: 200px;
+}
+
+.direct{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.direct li a{
+    text-decoration: none;
+    margin-right: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.direct li a:hover{
+    color:#1E90FF;;
+}
+
+.footer p{
+    position: absolute;
+    left: 150px;
+}
+
+
+
+.handles{
+    position: absolute;
+    right: 200px;
+}
+
+.handles i{
+    color:#000080
+}
+
+.handles li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.handles  li a{
+    text-decoration: none;
+}
+
+.flex-handles{
+    display: flex;
+}
+
+
+
+
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 879px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+    .flex-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-img {
+        right: 0;
+        bottom: 0;
+        width: 80px;
+        height: 70px;
+    }
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    header ul li {
+        padding-top: 10px;
+    }
+    .main-page {
+        height: auto;
+        padding-top: 30px;
+    }
+    .about {
+        width: 90%;
+        padding: 40px;
+    }
+    .flex-about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .notice {
+        padding: 20px;
+    }
+    .Elite-flex, .Elite1-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Elite-service, .Elite-service1 {
+        width: 80%;
+        padding: 20px;
+    }
+    .logistics {
+        height: auto;
+        padding: 20px;
+    }
+    .log-info {
+        width: 90%;
+        padding: 20px;
+    }
+    .why-us {
+        padding: 20px;
+    }
+    .flex-whyus {
+        flex-direction: column;
+        align-items: center;
+    }
+    .book-us {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reg {
+        width: 90%;
+        margin-left: 0;
+    }
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+    #toggle-button {
+        margin-top: 20px;
+    }
+    .footer {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .direct {
+        flex-direction: column;
+    }
+    .direct li a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .footer p {
+        position: static;
+        margin-top: 10px;
+    }
+    .handles {
+        position: static;
+        margin-top: 10px;
+    }
+    .flex-handles {
+        justify-content: center;
+    }
+}
