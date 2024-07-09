@@ -1,7 +1,6 @@
 body{
     margin: 0;
     color: #000080;
-
 }
 
 /* Header styling */
@@ -12,13 +11,21 @@ header{
     width: 100%;
     position: fixed;
     top: 0;
-
 }
+
+#checkbox {
+    display: none;
+  }
+  
+  .long i {
+    display: none;
+  }
+  
 
 /* Styling for the header logo */
 .header-img{
     position: relative;
-    right: 280px;
+    left: 3px;
     bottom: 5px;
 }
 
@@ -116,8 +123,8 @@ header ul li a:hover{
 
 .Elite-service1{
     padding: 100px;
-    background-color: aqua;
     width: 50%;
+    background-color: #000080;
 }
 
 .services i{
@@ -155,6 +162,7 @@ header ul li a:hover{
     text-align: center;
     background: url(images/logistics.jpg);
     height: 500px;
+    padding-top: 150px;
 }
 
 .log-info{
@@ -163,7 +171,8 @@ header ul li a:hover{
     background-color: bisque;
     padding: 50px;
     border-radius: 20px;
-    margin-top: 10px;
+    margin-top: 0px;
+    height: auto;
 }
 
 
@@ -196,13 +205,16 @@ header ul li a:hover{
     display: flex;
     justify-content: space-around;
     background: url(images/bcg\ painter.jpg);
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 .reg{
-    background-color: aqua;
+    background-color: bisque;
     width: 30%;
     padding: 20px;
     margin-left: 20px;
+    border-radius: 10px;
 }
 
 form {
@@ -291,6 +303,7 @@ textarea {
 .footer{
     background-color: aqua;
     height: 200px;
+    padding-top: 10px;
 }
 
 .direct{
@@ -325,7 +338,8 @@ textarea {
 }
 
 .handles i{
-    color:#000080
+    color:#000080;
+    font-size:22px;
 }
 
 .handles li{
@@ -345,21 +359,23 @@ textarea {
 
 
 
-/* Media Query for Mobile Devices */
+
+ /* Media Query for Mobile Devices */
 @media screen and (max-width: 879px) {
     header {
-        height: auto;
-        padding: 10px;
+        height: 80px;
+        padding: 2px;
     }
     .flex-header {
         flex-direction: column;
         align-items: center;
     }
     .header-img {
-        right: 0;
+        left: -180px;
         bottom: 0;
-        width: 80px;
+        width: 100px;
         height: 70px;
+        top: 28px;
     }
     header ul {
         display: flex;
@@ -370,36 +386,83 @@ textarea {
     header ul li {
         padding-top: 10px;
     }
+
+    .long i {
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 160px;
+        display: block;
+        position: absolute;
+        top: -5px;
+        right: 10%;
+        cursor: pointer;
+        transition-delay: 4ms;
+      }
+
+      .list {
+        background-color: bisque;
+        height: 40vh;
+        position: fixed;
+        width: 47.8%;
+        top: 23%;
+        margin-left: 40px;
+        right: 100%;
+        transition: 1.5s;
+        border-radius: 25px;
+      }
+    
+    
+      #checkbox:checked~ul {
+        right: 2%;
+      }
+
     .main-page {
-        height: auto;
+        height: 850px;
         padding-top: 30px;
+        margin-top: 80px;
+        padding-top: 50px;
+        padding-bottom: 60px;
     }
+
     .about {
-        width: 90%;
         padding: 40px;
+        width: 60%;
+        background-color: white;
+        border-radius: 20px;
+        margin: auto;
+        text-align: center;
+        padding: 80px;
+        padding-top: 15px;
+        height: 770px;
+        margin-top: 10px;
+        font-size: 15px;
     }
     .flex-about {
         flex-direction: column;
         align-items: center;
     }
     .notice {
-        padding: 20px;
+        padding: 35px;
+        font-size: 12px;
     }
     .Elite-flex, .Elite1-flex {
         flex-direction: column;
         align-items: center;
     }
     .Elite-service, .Elite-service1 {
-        width: 80%;
+        width: 100%;
         padding: 20px;
     }
+    
     .logistics {
-        height: auto;
+       height: auto;
         padding: 20px;
     }
     .log-info {
         width: 90%;
-        padding: 20px;
+        padding: 10px;
+        font-size: 15px;
     }
     .why-us {
         padding: 20px;
@@ -423,27 +486,38 @@ textarea {
     #toggle-button {
         margin-top: 20px;
     }
+
     .footer {
-        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
-        text-align: center;
+        height: auto;
     }
+
     .direct {
         flex-direction: column;
     }
-    .direct li a {
-        margin-right: 0;
-        margin-bottom: 10px;
+
+    .direct li {
+        margin: 5px 0;
     }
+
     .footer p {
         position: static;
         margin-top: 10px;
     }
+
     .handles {
         position: static;
         margin-top: 10px;
     }
+
     .flex-handles {
         justify-content: center;
+    }
+
+    .handles li {
+        margin: 0 10px;
     }
 }
