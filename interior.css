@@ -1,7 +1,6 @@
 body{
     margin: 0;
     color: #000080;
-
 }
 
 /* Header styling */
@@ -10,13 +9,22 @@ header{
     background-color: aqua;
     padding: 15px;
     top: 0;
-
+    position: fixed;
+    width: 100%;
 }
+
+#checkbox {
+    display: none;
+  }
+  
+  .long i {
+    display: none;
+  }
 
 /* Styling for the header logo */
 .header-img{
     position: relative;
-    right: 280px;
+    left: 3px;
     bottom: 5px;
 }
 
@@ -78,6 +86,7 @@ header ul li a:hover{
     background-color: aqua;
     height: 200px;
     margin-top: -20px;
+    padding-top: 10px;
 }
 
 .direct{
@@ -129,3 +138,118 @@ header ul li a:hover{
 }
 
 
+
+
+
+
+@media screen and (max-width: 879px) {
+
+    header {
+        height: 80px;
+        padding: 2px;
+    }
+
+    header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    header ul li {
+        padding-top: 30px;
+    }
+
+    .header-img {
+        left: -180px;
+        bottom: 0;
+        width: 100px;
+        height: 70px;
+        top: 15px;
+    }
+
+    .long i {
+        font-size: 35px;
+        color: white;
+        float: right;
+        line-height: 160px;
+        display: block;
+        position: absolute;
+        top: -25px;
+        right: 10%;
+        cursor: pointer;
+        transition-delay: 4ms;
+      }
+
+      .list {
+        background-color: bisque;
+        height: 35vh;
+        position: fixed;
+        width: 47.8%;
+        top: 10%;
+        margin-left: 40px;
+        right: 100%;
+        transition: 1.5s;
+        border-radius: 25px;
+      }
+    
+    
+      #checkbox:checked~ul {
+        right: 2%;
+      }
+
+    .flex-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interior-main {
+        height: 400px;
+        padding: 50px 20px;
+    }
+
+    .bcg-color {
+        width: 90%;
+        padding: 20px;
+        margin-top: 70px;
+    }
+
+    .interior-main p {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .direct {
+        flex-direction: column;
+    }
+
+    .direct li {
+        margin: 5px 0;
+    }
+
+    .footer p {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .handles {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .flex-handles {
+        justify-content: center;
+    }
+
+    .handles li {
+        margin: 0 10px;
+    }
+}
